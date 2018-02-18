@@ -7,7 +7,6 @@
 /////////////////////////////
 const fs = require("fs");
 let database = JSON.parse(fs.readFileSync("./pp/main.json", "utf8"));
-var google = require('google');
 var cool = require('cool-ascii-faces');
 var base32 = require('hi-base32');
 var login = require("facebook-chat-api");
