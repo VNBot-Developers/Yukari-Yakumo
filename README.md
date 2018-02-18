@@ -4,19 +4,9 @@
 
 $help or botyukari.xyz/com.html
 
-Download về 
+bắt buộc phải có nodejs, git :3 nhé
 
-cài đặt nodejs :3 nhé
-
-thay tài khoản và mật khẩu của các bạn ở file config.js
-```
-exports.account = {
-    "username" : "EMAILHERE",
-    "password" : "PASSWORD HERE"
-};
-```
-
-npm install
+Download về npm package.json 
 
 sau đó thì 
 
