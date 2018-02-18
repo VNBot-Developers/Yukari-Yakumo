@@ -12,7 +12,7 @@ var base32 = require('hi-base32');
 var login = require("facebook-chat-api");
 var retrieve, mess;
 var config = require('config.js');
-var account = require('accounts');
+var account = require('accounts.json');
 var admin = 100009205764028;
 var uriencode = require('urlencode');
 var request = require('request');
