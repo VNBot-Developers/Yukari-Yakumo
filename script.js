@@ -11,7 +11,7 @@ var cool = require('cool-ascii-faces');
 var base32 = require('hi-base32');
 var login = require("facebook-chat-api");
 var retrieve, mess;
-var config = require('./config.js');
+var config = require('config');
 var admin = 100009205764028;
 var uriencode = require('urlencode');
 var request = require('request');
