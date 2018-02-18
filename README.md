@@ -14,5 +14,6 @@ node index.js :3
 
 tận hưởng nhé
 
+sửa lại file accounts.json trước khi dùng ạ 
 
 [![DEMO BOT](https://i.ytimg.com/vi_webp/sPxYlhMkZtU/sddefault.webp)](https://www.youtube.com/watch?v=sPxYlhMkZtU "DEMO YUKARI BOT")
