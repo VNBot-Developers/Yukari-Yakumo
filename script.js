@@ -137,7 +137,7 @@ func.log(`,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,*,..........*,,*************************
 /////((((.              .,,,,*/*,           . (%%%%%%#(%%%%%%%%(%%%%%%%%%%%%%%%%%%###%##%#///######((,,(#*/////////////
 ((((#(((((                ...                .((#%%%%%%#%%%%%%%(%%%%%%%%%%%%%%%%%####%####//######(###/#///////////////`.yellow);
 func.log('/********* COPYRIGHT (C) Gr33ntii. WORK UNDER MIT LICENSE!! *********/'.red);
-login({email: config.get("email"), password: config.get("password")}, function callback (err, api) {, function callback(err, api) {
+login({email: account.get("email"), password: account.get("password")}, function callback (err, api) {, function callback(err, api) {
     fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
     func.log('Logged as https://fb.com/' + api.getCurrentUserID(), 0);
     func.log('Start listening!', 0);
