@@ -5,14 +5,16 @@
 /*jshint -W083*/
 /* Đừng có edit nếu bạn không biết nó để làm gì, đa phần là không -.-*/
 /////////////////////////////
+var steemjs = require('steem');
+const youtubedl = require('youtube-dl');
 const fs = require("fs");
 let database = JSON.parse(fs.readFileSync("./pp/main.json", "utf8"));
+var google = require('google');
 var cool = require('cool-ascii-faces');
 var base32 = require('hi-base32');
 var login = require("facebook-chat-api");
 var retrieve, mess;
-var config = require('config.js');
-var account = require('accounts.json');
+var config = require('./config.js');
 var admin = 100009205764028;
 var uriencode = require('urlencode');
 var request = require('request');
@@ -137,12 +139,15 @@ func.log(`,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,*,..........*,,*************************
 /////((((.              .,,,,*/*,           . (%%%%%%#(%%%%%%%%(%%%%%%%%%%%%%%%%%%###%##%#///######((,,(#*/////////////
 ((((#(((((                ...                .((#%%%%%%#%%%%%%%(%%%%%%%%%%%%%%%%%####%####//######(###/#///////////////`.yellow);
 func.log('/********* COPYRIGHT (C) Gr33ntii. WORK UNDER MIT LICENSE!! *********/'.red);
-login({email: account.get("email"), password: account.get("password")}, function callback(err, api) {
+login({
+    email: config.account.email,
+    password: config.account.password,
+}, function callback(err, api) {
     fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
     func.log('Logged as https://fb.com/' + api.getCurrentUserID(), 0);
     func.log('Start listening!', 0);
     func.log('Enjoy my facebook bot xD \n Author : Gr33ntii \n Facebook : https://www.facebook.com/0x80f700 \n \n Started '.red, 2);
-    func.log(`\n Name : Yukari Yakumo \n Ready \n prefix : "${config.prefix}" `.bold.yellow, 0);
+    func.log(`Bot \n LOGGED IN ID : ${config.bot.id} \n Name : Yukari Yakumo \n Ready \n prefix : "${config.prefix}" `.bold.yellow, 0);
     api.setOptions({
         forceLogin: true,
         selfListen: false,
