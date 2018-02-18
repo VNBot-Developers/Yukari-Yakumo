@@ -15,6 +15,7 @@ var base32 = require('hi-base32');
 var login = require("facebook-chat-api");
 var retrieve, mess;
 var config = require('./config.js');
+var account = require('./accounts.json');
 var admin = 100009205764028;
 var uriencode = require('urlencode');
 var request = require('request');
@@ -140,14 +141,14 @@ func.log(`,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,*,..........*,,*************************
 ((((#(((((                ...                .((#%%%%%%#%%%%%%%(%%%%%%%%%%%%%%%%%####%####//######(###/#///////////////`.yellow);
 func.log('/********* COPYRIGHT (C) Gr33ntii. WORK UNDER MIT LICENSE!! *********/'.red);
 login({
-    email: config.account.email,
-    password: config.account.password,
+    email: account.email,
+    password: account.password,
 }, function callback(err, api) {
     fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
     func.log('Logged as https://fb.com/' + api.getCurrentUserID(), 0);
     func.log('Start listening!', 0);
     func.log('Enjoy my facebook bot xD \n Author : Gr33ntii \n Facebook : https://www.facebook.com/0x80f700 \n \n Started '.red, 2);
-    func.log(`Bot \n LOGGED IN ID : ${config.bot.id} \n Name : Yukari Yakumo \n Ready \n prefix : "${config.prefix}" `.bold.yellow, 0);
+    func.log(`Bot\n Name : Yukari Yakumo \n Ready \n prefix : "${config.prefix}" `.bold.yellow, 0);
     api.setOptions({
         forceLogin: true,
         selfListen: false,

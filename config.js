@@ -1,7 +1,4 @@
-exports.account = {
-    "username" : "EMAILHERE",
-    "password" : "PASSWORD HERE"
-};
+
 exports.numColors = 10;
 exports.owner = {
     "id": "100009205764028"
