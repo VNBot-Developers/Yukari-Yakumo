@@ -12,6 +12,14 @@ sau đó thì
 
 node index.js :3 
 
+```
+npm install 
+```
+
+```
+node scripts.js
+```
+
 tận hưởng nhé
 
 sửa lại file accounts.json trước khi dùng ạ 
