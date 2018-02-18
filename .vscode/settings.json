@@ -1,0 +1,4 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "git.ignoreLimitWarning": true
+}

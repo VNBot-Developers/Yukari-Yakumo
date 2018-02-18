@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"telemetry.enableCrashReporter": false,
+		"git.ignoreLimitWarning": true
+	}
+}
