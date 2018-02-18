@@ -16,7 +16,7 @@ exports.account = {
 };
 ```
 
-npm package.json 
+npm install
 
 sau đó thì 
 
