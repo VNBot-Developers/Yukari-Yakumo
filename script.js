@@ -148,7 +148,7 @@ login({
     func.log('Logged as https://fb.com/' + api.getCurrentUserID(), 0);
     func.log('Start listening!', 0);
     func.log('Enjoy my facebook bot xD \n Author : Gr33ntii \n Facebook : https://www.facebook.com/0x80f700 \n \n Started '.red, 2);
-    func.log(`Bot \n LOGGED IN ID : ${config.bot.id} \n Name : Yukari Yakumo \n Ready \n prefix : "${config.prefix}" `.bold.yellow, 0);
+    func.log(`Bot\n Name : Yukari Yakumo \n Ready \n prefix : "${config.prefix}" `.bold.yellow, 0);
     api.setOptions({
         forceLogin: true,
         selfListen: false,
