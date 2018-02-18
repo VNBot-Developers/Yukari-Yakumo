@@ -5,7 +5,6 @@
 /*jshint -W083*/
 /* Đừng có edit nếu bạn không biết nó để làm gì, đa phần là không -.-*/
 /////////////////////////////
-const youtubedl = require('youtube-dl');
 const fs = require("fs");
 let database = JSON.parse(fs.readFileSync("./pp/main.json", "utf8"));
 var google = require('google');
