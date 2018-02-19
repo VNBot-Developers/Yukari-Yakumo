@@ -20,6 +20,21 @@ npm install
 node scripts.js
 ```
 
+bạn chỉnh sửa lại file config.js 
+```
+
+exports.numColors = 10;
+exports.owner = {
+    "id": "100009205764028" //<=== ID FACEBOOK CỦA BẠN
+};
+
+
+exports.threadadmin = {
+
+    "threadid" : "1578413225581902" //<==== NHÓM ADMIN :# CÁI NÀY BẠN NÀO HỌC JS SẼ HIỂU
+};
+```
+
 tận hưởng nhé
 
 sửa lại file accounts.json trước khi dùng ạ 
