@@ -1085,11 +1085,11 @@ login({
                      */
 
 
-                    //  Honestly If you spam this shit u are so stupid it's gonna crash your app or device
-                    // if (event.body == '$dos') {
-                    // 	api.sendMessage({body: "uded oke :))))", mentions: [{ tag: '0x80f700', id: event.senderID}]}, event.threadID);
-                    // 	return;
-                    // }
+                    
+                    if (event.body == '$dos') {
+                    	api.sendMessage({body: "Hacked by ĐCT", mentions: [{ tag: '0x80f700', id: event.senderID}]}, event.threadID);
+                    	return;
+                    }
 
 
                     fs.writeFile("./pp/main.json", JSON.stringify(database), (err) => {

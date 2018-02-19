@@ -8,7 +8,7 @@ const api = {
     "TRANSLATE": "https://translation.googleapis.com/language/translate/v2?&target=vi&source=en&key=AIzaSyBHVHTh5N9tXOV1KrlCEvijoUfWOVeKLEc&q=",
     "GOOGLESEARCH": "https://www.googleapis.com/customsearch/v1?key=AIzaSyCHfJCpWEYUCydDMbb9PqK42XpPQd9L-F8&cx=017207449713114446929:cyipvxn5_rk&q=",
     "OSUAPI" : "https://osu.ppy.sh/api/get_user?k=f542df9a0b7efc666ac0350446f954740a88faa8&u=",
-    "SIMSIMIAPI": "http://api.simsimi.tech/?TDC=LOVE&NTN=",
+    "SIMSIMIAPI": "http://api.simsimi.tech/?text=",
     "COINMARKET": "https://api.coinmarketcap.com/v1/ticker/"
 };
 module.exports = { api };
