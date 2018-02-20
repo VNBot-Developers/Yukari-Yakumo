@@ -6,9 +6,11 @@ $help or botyukari.xyz/com.html
 
 bắt buộc phải có nodejs, git :3 nhé
 
-Download về npm package.json 
+Download node và git về 
 
-sau đó thì 
+rồi npm i (đợi sau khi hoàn tất)
+
+=> gõ 
 
 node index.js :3 
 
